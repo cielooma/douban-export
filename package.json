@@ -1,0 +1,30 @@
+{
+  "name": "douban-export",
+  "version": "0.1.0",
+  "description": "Export a Douban user's book, film, music, and game collections to CSV, Markdown, or JSON.",
+  "keywords": [
+    "douban",
+    "export",
+    "csv",
+    "markdown",
+    "cli",
+    "豆瓣"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "douban-export": "src/cli.mjs"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/cli.mjs",
+    "test": "node --test"
+  }
+}
