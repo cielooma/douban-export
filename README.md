@@ -109,12 +109,6 @@ douban-export/
 
 只读取公开可见的收藏页，不登录、不写操作；默认每页间隔 2.5 秒，请勿自行调低到很小的高频抓取。私密收藏需要你自己提供 Cookie，Cookie 只在本地内存里用于本次请求，不会写盘。导出的文件默认落在 `./douban-books/`，已在 `.gitignore` 里忽略。
 
-## 下一步
-
-- **增量导出**：把上次的 JSON 按 `subjectId` 建集合，只输出新增条目。
-- **定时跑**：`cron` 或 `launchd` 每天跑一次，配合 `--format json` 落盘。
-- **接入 Obsidian**：`--format md` 的输出直接放进 vault，按 `## 看过` 分节。
-
 ## 许可
 
 [MIT](LICENSE)
